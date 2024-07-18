@@ -43,21 +43,18 @@ pip install -r requirements.txt
 ```
 from google.colab import drive
 drive.mount('/content/drive')
-
 ```
 
 ## Abra o arquivo de script e defina o caminho para seu dataset e as classes:
 ```
 path_to_images = '/content/drive/MyDrive/caminho-do-seu-dataset'
 classes = ['classe1', 'classe2', 'classe3']
-
 ```
 
 ## Execute o script:
 
 ```
 python main.py
-
 ```
 
 O modelo é treinado com o dataset e classes especificadas. O script lida com aumento de dados, treinamento, validação e early stopping. Após o treinamento, o modelo é avaliado no conjunto de teste. O script fornece métricas como acurácia, precisão, recall e F1 score. Os resultados da avaliação são exibidos no console e incluem um relatório de classificação detalhado.
@@ -70,21 +67,18 @@ Instale a biblioteca pyTelegramBotAPI:
 
 ```
 pip install pyTelegramBotAPI
-
 ```
 
 ## Configure o token do bot no script api_telegram.py
 
 ```
 TOKEN = "SEU_TOKEN_AQUI"
-
 ```
 
 ## Execute o script api_telegram.py:
 
 ```
 python api_telegram.py
-
 ```
 
 Envie uma imagem para o bot no Telegram para receber a classificação.
